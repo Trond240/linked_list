@@ -56,28 +56,38 @@ h1 {
   width: 96%;
 }
 
-button {
+/* button {
   display: flex;
   justify-content: center;
-}
+} */
 
 .aside-add-task-button {
   background-color: #FFC107;
   border: none;
   border-radius: 0 3px 3px 0;
+  color: #FFFFFF;
   display: flex;
+  font-weight: bolder;
   height: 4em;
   justify-content: center;
   margin-bottom: 50%;
-  margin-left: 6px;
+  margin-left: 14px;
   padding: 0;
   width: 96%;
 }
 
 main {
-  background-color: #455A64;
+  background-color: #CFD8DC;
   border-left: 2px solid #4a6378;
   width: 50%;
   height: 100%;
+
+}
+
+p {
+  background-color:#CFD8DC;
+  color: #607D8D;
+  font-size: 3em;
+  margin-bottom: 30%;
 
 }
