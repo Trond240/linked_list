@@ -38,7 +38,7 @@ h1 {
 }
 
 #aside-title-input,
-#aside-add-url-input {
+#aside-url-input {
   border: 2px solid #CFD8DC;
   border-radius: 3px;
   font-size: 1.5em;
@@ -83,8 +83,7 @@ main {
   background-color: #CFD8DC;
   border-left: 2px solid #4a6378;
   width: 50%;
-  height: 100%;
-
+  height: -webkit-fill-available;
 }
 
 .blank-msg {
@@ -96,10 +95,14 @@ main {
 }
 
 .book-card {
-  border-color: 1px solid #607D8D;
+  border-width: thick;
   background-color: #F2F4F4;
-  margin-left: 10%;
   width: 80%;
+  border: 1px solid #607D8D;
+  margin:auto;
+  margin-top: 5%;
+  padding: 1%;
+
 
 }
 
@@ -107,12 +110,16 @@ main {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #607D8D;
+  padding-bottom: 2%;
+  padding-top: 2%;
 }
 
 .url-title {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #607D8D;
+  padding-bottom: 2%;
+  padding-top: 2%;
 }
 
 .card-buttons {
@@ -120,16 +127,19 @@ main {
   justify-content: space-between;
 }
 
-.read-button,
-.delete-button {
+.read,
+.delete {
     background-color: #F2F4F4;
     border-color: #F2F4F4;
 }
 
 .card-buttons {
   color: #455A64;
+  padding-bottom: 2%;
+  padding-top: 2%;
 }
 
-read-button:focus {
+.read:hover,
+.delete:hover {
   color: red;
 }

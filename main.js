@@ -4,7 +4,7 @@ var asideUrlInput = document.getElementById('aside-url-input');
 var asideAddBookmarkButton = document.querySelector('.aside-add-bookmark-button');
 var makeBookList = document.querySelector('.aside-add-bookmark-button');
 var bookmark = document.querySelector('.bookmark-section')
-var bookListArr = document.querySelectorAll('.input');
+var bookListArr = document.querySelectorAll('.aside-add-url-input');
 var bookList = [];
 var mainContainer = document.querySelector('.bookmark')
 
@@ -23,10 +23,14 @@ function disableEnterButton() {
   }
 };
 
-function makeBookCard(
-  
-)
-
+// function reinstantiateBookmark(marksArr) {
+//   var array = [];
+//   for (var i = 0; i < marksArr.length; i++){
+//     var nBookm = new Bookmark({title: marksArr[i].text, read: marksArr[i].read, id: marksArr[i].id});
+//     array.push(nBookm);
+//   }
+//   return array;
+// };
 
 
 function showBookmark(event) {
@@ -35,16 +39,17 @@ function showBookmark(event) {
   <section class='book-card'>
     <p class='title'><span>${asideTitleInput.value}</span>
       <div class ='url-title'>
-      <p><span>URL</p>
+      <p>${asideUrlInput.value}</p>
       </div>
       <div class='card-buttons'>
-        <button class ="read-button">Read</button>
-        <button class ="delete-button">Delete</button>
+        <button class ="read">Read</button>
+        <button class ="delete">Delete</button>
       </div>
     </section>`
     ;
 
     var makeBookCard = document.querySelector('.aside-add-bookmark-button')
-
     mainContainer.innerHTML = bookCardTemplate;
+
+
 };
