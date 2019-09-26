@@ -1,8 +1,11 @@
-class LinkedList {
-  constructor(obj) {
-    this.id = obj.id;
-    this.title = obj.title;
-    this.url = obj.url;
+class Bookmark {
+  constructor(id, title, url, read) {
+    this.id = id;
+    this.title = title;
+    this.url = url;
     this.read = false;
+  }
+  toggleRead() {
+    this.read
   }
 }

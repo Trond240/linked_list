@@ -3,10 +3,16 @@ var asideTitleInput = document.getElementById('aside-title-input');
 var asideUrlInput = document.getElementById('aside-url-input');
 var asideAddBookmarkButton = document.querySelector('.aside-add-bookmark-button');
 var makeBookList = document.querySelector('.aside-add-bookmark-button');
+var bookmark = document.querySelector('.bookmark-section')
+var bookListArr = document.querySelectorAll('.input');
 var bookList = [];
+var mainContainer = document.querySelector('.bookmark')
 
 // aside.addEventListener('click', asideEventListener);
 asideTitleInput.addEventListener('input', disableEnterButton);
+document.querySelector('.aside-add-bookmark-button').addEventListener('click', showBookmark);
+// asideAddBookmarkButton.addEventListener('click', showBookmarkCard);
+
 
 
 function disableEnterButton() {
@@ -17,27 +23,28 @@ function disableEnterButton() {
   }
 };
 
-// function showTaskCard(taskItems, toDoList) {
-//   cards.innerHTML = `
-//   <section data-id=${toDoList.id} class='card'>
-//     <header>
-//       <h2 class='card-header'>${toDoList.title}</h2>
-//     </header>
-//     <label class='card-task-container'>
-//     ${showTasksFromArr(taskItems)}
-//     </label>
-//     <footer>
-//       <span class='urgent-button-container'>
-//         <button class='urgent-button'>
-//           <img class='urgent-img' src='images/urgent.svg'>
-//         </button>
-//         <p class='card-button-label'>URGENT</p>
-//       </span>
-//       <span class='card-delete-button-container'>
-//         <button class='delete-button' disabled>
-//         </button>
-//         <p class='card-button-label'>DELETE</p>
-//       </span>
-//     </footer>
-//    </section>` + cards.innerHTML;
-// };
+function makeBookCard(
+  
+)
+
+
+
+function showBookmark(event) {
+  event.preventDefault();
+  var bookCardTemplate = `
+  <section class='book-card'>
+    <p class='title'><span>${asideTitleInput.value}</span>
+      <div class ='url-title'>
+      <p><span>URL</p>
+      </div>
+      <div class='card-buttons'>
+        <button class ="read-button">Read</button>
+        <button class ="delete-button">Delete</button>
+      </div>
+    </section>`
+    ;
+
+    var makeBookCard = document.querySelector('.aside-add-bookmark-button')
+
+    mainContainer.innerHTML = bookCardTemplate;
+};

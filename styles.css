@@ -41,7 +41,6 @@ h1 {
 #aside-add-url-input {
   border: 2px solid #CFD8DC;
   border-radius: 3px;
-  color: #CFD8DC;
   font-size: 1.5em;
   height: 2em;
   margin: 0 2% auto;
@@ -77,7 +76,7 @@ h1 {
 }
 
 button:disabled {
-  background-color: #FFD773; 
+  background-color: #FFD773;
 }
 
 main {
@@ -88,10 +87,49 @@ main {
 
 }
 
-p {
+.blank-msg {
   background-color:#CFD8DC;
   color: #607D8D;
   font-size: 3em;
   margin-bottom: 30%;
 
+}
+
+.book-card {
+  border-color: 1px solid #607D8D;
+  background-color: #F2F4F4;
+  margin-left: 10%;
+  width: 80%;
+
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #607D8D;
+}
+
+.url-title {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #607D8D;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.read-button,
+.delete-button {
+    background-color: #F2F4F4;
+    border-color: #F2F4F4;
+}
+
+.card-buttons {
+  color: #455A64;
+}
+
+read-button:focus {
+  color: red;
 }
